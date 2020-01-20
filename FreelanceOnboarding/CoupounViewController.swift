@@ -25,7 +25,7 @@ class CouponViewController: UIViewController {
         anchorSubviews()
         styleSubviews()
 
-//        populate()
+        populate()
     }
     
 //    Tells sub views where to go
@@ -33,7 +33,7 @@ class CouponViewController: UIViewController {
         view.addSubview(stackView)
         stackView.centerInSuperview()
         stackView.widthToSuperview(multiplier: 0.8)
-        stackView.heightToSuperview(multiplier: 0.3)
+        stackView.heightToSuperview(multiplier: 0.8)
         
 //        let redView = UIView()
 //        let blueView = UIView()
@@ -54,10 +54,14 @@ class CouponViewController: UIViewController {
         stackView.spacing = 20
         stackView.axis = .vertical
         
+        numberOfCouponsLabelView.offset = -30
+        numberOfCouponsLabelView.anchorSubviews()
         numberOfCouponsLabelView.imageView.image = #imageLiteral(resourceName: "CouponsFull")
         numberOfCouponsLabelView.descriptionLabel.text = "# Coupons"
         numberOfCouponsLabelView.countLabel.text = "3"
         
+        numberOfArrivalsLabelView.offset = 30
+        numberOfArrivalsLabelView.anchorSubviews()
         numberOfArrivalsLabelView.imageView.image = #imageLiteral(resourceName: "LocationsFull")
         numberOfArrivalsLabelView.descriptionLabel.text = "# Arrivals"
         numberOfArrivalsLabelView.countLabel.text = "5"
