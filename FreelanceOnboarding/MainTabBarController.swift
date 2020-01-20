@@ -21,17 +21,17 @@ class MainTabBarController: UITabBarController {
         let purpleView = UIView()
         purpleView.backgroundColor = .purple
         
-        redVC.tabBarItem.title = "Red"
-        redVC.view.backgroundColor = .red
+        redVC.tabBarItem.title = "Gray"
+        redVC.view.backgroundColor = .lightGray
         redVC.view.addSubview(purpleView)
         purpleView.centerInSuperview()
-        purpleView.width(200)
+        purpleView.width(400)
         purpleView.height(200)
         
-        blueVC.view.backgroundColor = .blue
-        blueVC.tabBarItem.title = "Blue"
-        greenVC.view.backgroundColor = .green
-        greenVC.tabBarItem.title = "Green"
+        blueVC.view.backgroundColor = .magenta
+        blueVC.tabBarItem.title = "Magenta"
+        greenVC.view.backgroundColor = .cyan
+        greenVC.tabBarItem.title = "Cyan"
         viewControllers = [redVC, blueVC, greenVC]
         // Do any additional setup after loading the view.
     }
