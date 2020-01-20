@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DeleteViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:FreelanceOnboarding.xcodeproj">
    </FileRef>
    <FileRef
